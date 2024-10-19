@@ -14,7 +14,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 # for model in genai.list_models():
 #     print(model)
 
-model=genai.GenerativeModel('models/gemini-pro-vision')
+model=genai.GenerativeModel('models/gemini-1.5-flash')
 
 def get_gemeni_response(input,image, prompt):
     response=model.generate_content([input,image[0],prompt])
